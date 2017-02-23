@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="74" id="KGk-i7-Jjw" customClass="MedicalDisplayHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Medicines" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYJ-0r-nB7">
+                        <rect key="frame" x="8" y="8" width="299" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="7vf-7q-fAd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.51764705879999995" green="0.20784313730000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAL-eT-Fwv">
+                        <rect key="frame" x="204" y="40" width="116" height="30"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="11"/>
+                        <state key="normal" title="Supplements" backgroundImage="btn_prescription_normal.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" backgroundImage="btn_prescription_touch.png"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIK-6D-EKe">
+                        <rect key="frame" x="102" y="40" width="116" height="30"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="11"/>
+                        <state key="normal" title="  Over-the-Counter" backgroundImage="btn_prescription_normal.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" backgroundImage="btn_prescription_touch.png"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybx-W9-DoR">
+                        <rect key="frame" x="-1" y="40" width="116" height="30"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="11"/>
+                        <state key="normal" title="Prescription" backgroundImage="btn_prescription_normal.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" backgroundImage="btn_prescription_touch.png"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="fYJ-0r-nB7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="1PU-DH-Kdp"/>
+                    <constraint firstAttribute="trailing" secondItem="HAL-eT-Fwv" secondAttribute="trailing" id="BPk-a0-DsL"/>
+                    <constraint firstItem="Ybx-W9-DoR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-1" id="LPt-s5-wdA"/>
+                    <constraint firstItem="fYJ-0r-nB7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="NA2-dq-UEH"/>
+                    <constraint firstItem="HAL-eT-Fwv" firstAttribute="leading" secondItem="nIK-6D-EKe" secondAttribute="trailing" constant="-14" id="Rp5-iU-tZo"/>
+                    <constraint firstItem="nIK-6D-EKe" firstAttribute="leading" secondItem="Ybx-W9-DoR" secondAttribute="trailing" constant="-13" id="Z86-rl-Zgc"/>
+                    <constraint firstItem="HAL-eT-Fwv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="cPc-9M-V4a"/>
+                    <constraint firstItem="nIK-6D-EKe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="hmc-16-aiw"/>
+                    <constraint firstItem="Ybx-W9-DoR" firstAttribute="width" secondItem="nIK-6D-EKe" secondAttribute="width" id="kTo-U8-IUF"/>
+                    <constraint firstAttribute="trailing" secondItem="fYJ-0r-nB7" secondAttribute="trailing" constant="13" id="lRN-q8-VUE"/>
+                    <constraint firstItem="Ybx-W9-DoR" firstAttribute="width" secondItem="HAL-eT-Fwv" secondAttribute="width" id="wia-w2-338"/>
+                    <constraint firstItem="Ybx-W9-DoR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="zOp-RS-sWv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="btnTab1" destination="Ybx-W9-DoR" id="PdI-QJ-ceJ"/>
+                <outlet property="btnTab2" destination="nIK-6D-EKe" id="arx-kO-Pqp"/>
+                <outlet property="btnTab3" destination="HAL-eT-Fwv" id="Vzh-S5-B6r"/>
+                <outlet property="lblHeaderTitle" destination="fYJ-0r-nB7" id="IWS-cd-z06"/>
+            </connections>
+            <point key="canvasLocation" x="290" y="288"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_prescription_normal.png" width="116" height="30"/>
+        <image name="btn_prescription_touch.png" width="116" height="30"/>
+    </resources>
+</document>

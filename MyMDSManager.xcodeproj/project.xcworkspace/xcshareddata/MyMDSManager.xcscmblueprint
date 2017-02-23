@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "264293C23E31340975609BBB7862782B190FCD30",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "264293C23E31340975609BBB7862782B190FCD30" : 0,
+    "107C46E5D4C92B24BEC7247A8F4EAC7CCD4D7C8C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4BA082BD-0D4C-4D52-B32E-48B7E12CD0A3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "264293C23E31340975609BBB7862782B190FCD30" : "MDSTracker-iPhone\/",
+    "107C46E5D4C92B24BEC7247A8F4EAC7CCD4D7C8C" : "MyMDSManager%202"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MyMDSManager",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MyMDSManager.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/squarebits-iphone\/mdsmanager-iphone-app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "107C46E5D4C92B24BEC7247A8F4EAC7CCD4D7C8C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/gtsdev1\/mdstracker-iphoneapp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "264293C23E31340975609BBB7862782B190FCD30"
+    }
+  ]
+}

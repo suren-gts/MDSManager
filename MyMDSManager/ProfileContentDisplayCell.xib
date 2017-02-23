@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NexaRegular.otf">
+            <string>NexaRegular</string>
+            <string>NexaRegular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ProfileContentDisplayCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEF-wx-aDb">
+                        <rect key="frame" x="160" y="11" width="155" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="jqU-IY-BuZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NexaRegular" family="Nexa Regular" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="box_dropdown.png" translatesAutoresizingMaskIntoConstraints="NO" id="ffe-UA-4wx">
+                        <rect key="frame" x="160" y="7" width="155" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="dIf-QS-Toy"/>
+                        </constraints>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JBr-Mm-pvK">
+                        <rect key="frame" x="5" y="11" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="ge5-VJ-USW"/>
+                            <constraint firstAttribute="height" constant="21" id="ugn-V4-5Et"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NexaRegular" family="Nexa Regular" pointSize="14"/>
+                        <color key="textColor" red="0.20784313730000001" green="0.50980392159999999" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seperator_profilepage.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dol-pc-5Ha">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="UKG-I5-3sg"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="JBr-Mm-pvK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="1u9-Z2-jVS"/>
+                    <constraint firstItem="JBr-Mm-pvK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="4Kp-ku-IxA"/>
+                    <constraint firstAttribute="trailing" secondItem="Dol-pc-5Ha" secondAttribute="trailing" id="4eF-0f-EOG"/>
+                    <constraint firstAttribute="trailing" secondItem="ffe-UA-4wx" secondAttribute="trailing" constant="5" id="7Hg-6d-MpC"/>
+                    <constraint firstItem="ffe-UA-4wx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="160" id="8gx-wr-Sr9"/>
+                    <constraint firstItem="vEF-wx-aDb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="P81-Ep-zvN"/>
+                    <constraint firstItem="ffe-UA-4wx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="VX1-m7-fGQ"/>
+                    <constraint firstAttribute="trailing" secondItem="JBr-Mm-pvK" secondAttribute="trailing" constant="165" id="bLU-qO-tu0"/>
+                    <constraint firstItem="Dol-pc-5Ha" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ckH-YG-Nih"/>
+                    <constraint firstAttribute="trailing" secondItem="vEF-wx-aDb" secondAttribute="trailing" constant="5" id="mAB-AU-7T7"/>
+                    <constraint firstAttribute="bottom" secondItem="Dol-pc-5Ha" secondAttribute="bottom" id="nOk-Hj-XaI"/>
+                    <constraint firstItem="vEF-wx-aDb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="160" id="rHj-RE-P6V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imgSeperator" destination="Dol-pc-5Ha" id="jxw-eo-9Pa"/>
+                <outlet property="lblTitle" destination="JBr-Mm-pvK" id="cgS-Ab-4yv"/>
+                <outlet property="lblValue" destination="vEF-wx-aDb" id="iha-v8-aHt"/>
+                <outlet property="txtField" destination="ffe-UA-4wx" id="bhO-dS-bbU"/>
+            </connections>
+            <point key="canvasLocation" x="320" y="295"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="box_dropdown.png" width="215" height="29"/>
+        <image name="seperator_profilepage.png" width="315" height="1"/>
+    </resources>
+</document>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NexaRegular.otf">
+            <string>NexaRegular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileHeaderCell" id="KGk-i7-Jjw" customClass="ProfileHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BU0-7V-jax">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ez-7V-FQu">
+                                <rect key="frame" x="8" y="11" width="272" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nCs-Bt-Q3I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaRegular" family="Nexa Regular" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nu5-B0-Uk0">
+                                <rect key="frame" x="288" y="11" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="NJg-t7-8sV"/>
+                                    <constraint firstAttribute="width" constant="22" id="Z6r-Gv-dH2"/>
+                                </constraints>
+                                <state key="normal" image="icn_arrowup_aboutlabel.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaC-RC-GLk">
+                                <rect key="frame" x="258" y="11" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Ucg-rc-F7Z"/>
+                                    <constraint firstAttribute="width" constant="22" id="qnZ-gd-8au"/>
+                                </constraints>
+                                <state key="normal" image="icn_edit_aboutlabel.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20784313730000001" green="0.50980392159999999" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="nu5-B0-Uk0" secondAttribute="centerY" constant="-1" id="4Zn-5K-IM7"/>
+                            <constraint firstAttribute="trailing" secondItem="nu5-B0-Uk0" secondAttribute="trailing" constant="10" id="Q50-zy-7nH"/>
+                            <constraint firstAttribute="trailing" secondItem="aaC-RC-GLk" secondAttribute="trailing" constant="42" id="QcW-85-se8"/>
+                            <constraint firstAttribute="trailing" secondItem="1ez-7V-FQu" secondAttribute="trailing" constant="40" id="Ttw-6a-lkh"/>
+                            <constraint firstItem="1ez-7V-FQu" firstAttribute="leading" secondItem="BU0-7V-jax" secondAttribute="leading" constant="8" id="mX3-c3-rJe"/>
+                            <constraint firstAttribute="centerY" secondItem="1ez-7V-FQu" secondAttribute="centerY" id="oJk-X2-MaQ"/>
+                            <constraint firstAttribute="centerY" secondItem="aaC-RC-GLk" secondAttribute="centerY" constant="-1" id="q3H-A3-Zdu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="BU0-7V-jax" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2hb-Mg-OGv"/>
+                    <constraint firstAttribute="trailing" secondItem="BU0-7V-jax" secondAttribute="trailing" id="EK7-WS-t9O"/>
+                    <constraint firstAttribute="bottom" secondItem="BU0-7V-jax" secondAttribute="bottom" constant="1" id="IFY-YA-Afh"/>
+                    <constraint firstItem="BU0-7V-jax" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vVp-9n-kAj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnActions" destination="aaC-RC-GLk" id="5FF-lm-y0d"/>
+                <outlet property="btnColleps" destination="nu5-B0-Uk0" id="K2O-uo-6B3"/>
+                <outlet property="lblHeaderTitle" destination="1ez-7V-FQu" id="1dp-bA-xm8"/>
+            </connections>
+            <point key="canvasLocation" x="320" y="295"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icn_arrowup_aboutlabel.png" width="21" height="21"/>
+        <image name="icn_edit_aboutlabel.png" width="19" height="19"/>
+    </resources>
+</document>

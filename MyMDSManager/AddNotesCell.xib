@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NexaRegular.otf">
+            <string>NexaRegular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="153" id="KGk-i7-Jjw" customClass="AddNotesCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fS-M7-mTq">
+                        <rect key="frame" x="10" y="5" width="223" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6Rf-9A-a2g"/>
+                            <constraint firstAttribute="width" constant="223" id="ZEh-Fr-Cdd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NexaRegular" family="Nexa Regular" pointSize="14"/>
+                        <color key="textColor" red="0.20784313730000001" green="0.50980392159999999" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box_for_description.png" translatesAutoresizingMaskIntoConstraints="NO" id="CA6-NK-aKJ">
+                        <rect key="frame" x="11" y="26" width="298" height="73"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="73" id="MeG-EJ-EmK"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxF-YS-37q">
+                        <rect key="frame" x="17" y="30" width="286" height="65"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="e0u-VC-6WJ"/>
+                        </constraints>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seperator_profilepage.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fap-cE-ji5">
+                        <rect key="frame" x="0.0" y="108" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Ova-X4-agr"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="CA6-NK-aKJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="2ep-6c-JXI"/>
+                    <constraint firstAttribute="trailing" secondItem="CA6-NK-aKJ" secondAttribute="trailing" constant="11" id="3AV-cm-usU"/>
+                    <constraint firstAttribute="trailing" secondItem="Fap-cE-ji5" secondAttribute="trailing" id="9hh-nx-cHj"/>
+                    <constraint firstItem="cxF-YS-37q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="G5G-66-dQZ"/>
+                    <constraint firstItem="0fS-M7-mTq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="JQO-6M-TdC"/>
+                    <constraint firstItem="cxF-YS-37q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="TvT-0U-Y61"/>
+                    <constraint firstItem="Fap-cE-ji5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="V0w-5N-8c7"/>
+                    <constraint firstItem="0fS-M7-mTq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="gvK-2k-lKt"/>
+                    <constraint firstItem="CA6-NK-aKJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="pTJ-41-AKL"/>
+                    <constraint firstAttribute="bottom" secondItem="Fap-cE-ji5" secondAttribute="bottom" id="tUC-hU-bSe"/>
+                    <constraint firstAttribute="trailing" secondItem="cxF-YS-37q" secondAttribute="trailing" constant="17" id="vXV-4P-wEZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imgSeperator" destination="Fap-cE-ji5" id="tBf-ZR-tdI"/>
+                <outlet property="lblTitle" destination="0fS-M7-mTq" id="B1O-zN-3vG"/>
+                <outlet property="tvNotes" destination="cxF-YS-37q" id="vyx-nI-oa3"/>
+            </connections>
+            <point key="canvasLocation" x="293" y="324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="box_for_description.png" width="298" height="73"/>
+        <image name="seperator_profilepage.png" width="315" height="1"/>
+    </resources>
+</document>

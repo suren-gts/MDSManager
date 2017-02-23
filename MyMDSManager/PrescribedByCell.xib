@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NexaRegular.otf">
+            <string>NexaRegular</string>
+            <string>NexaRegular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PrescribedByCell" id="ZFq-13-DXo" customClass="PrescribedByCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZFq-13-DXo" id="Ycs-K7-2mH">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJ5-nh-KZD">
+                        <rect key="frame" x="160" y="11" width="155" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="BUb-LE-nfe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NexaRegular" family="Nexa Regular" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="box_dropdown.png" translatesAutoresizingMaskIntoConstraints="NO" id="jrm-ua-11u">
+                        <rect key="frame" x="160" y="7" width="155" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="whS-KD-Qv9"/>
+                        </constraints>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ejj-9K-6Yw">
+                        <rect key="frame" x="5" y="11" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Blv-Bq-u9b"/>
+                            <constraint firstAttribute="width" constant="150" id="D9C-mF-cQk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NexaRegular" family="Nexa Regular" pointSize="14"/>
+                        <color key="textColor" red="0.20784313730000001" green="0.50980392159999999" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JN-hH-NaH">
+                        <rect key="frame" x="160" y="45" width="155" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="1rD-6l-WFJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <state key="normal" title="Add Provider" backgroundImage="btn_add_diagnosis.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seperator_profilepage.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xvg-HA-lDh">
+                        <rect key="frame" x="0.0" y="82" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="H8f-Jw-iu0"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="SJ5-nh-KZD" firstAttribute="top" secondItem="Ycs-K7-2mH" secondAttribute="top" constant="11" id="Aqd-WP-eKN"/>
+                    <constraint firstAttribute="trailing" secondItem="2JN-hH-NaH" secondAttribute="trailing" constant="5" id="KcC-U2-ApC"/>
+                    <constraint firstItem="Xvg-HA-lDh" firstAttribute="leading" secondItem="Ycs-K7-2mH" secondAttribute="leading" id="O9A-7Q-IDf"/>
+                    <constraint firstItem="2JN-hH-NaH" firstAttribute="top" secondItem="Ycs-K7-2mH" secondAttribute="top" constant="45" id="R2b-Z5-Voh"/>
+                    <constraint firstItem="Ejj-9K-6Yw" firstAttribute="leading" secondItem="Ycs-K7-2mH" secondAttribute="leading" constant="5" id="UOO-yB-fpF"/>
+                    <constraint firstItem="jrm-ua-11u" firstAttribute="leading" secondItem="Ycs-K7-2mH" secondAttribute="leading" constant="160" id="Vxu-FI-MxN"/>
+                    <constraint firstItem="jrm-ua-11u" firstAttribute="top" secondItem="Ycs-K7-2mH" secondAttribute="top" constant="7" id="blK-sA-jgG"/>
+                    <constraint firstAttribute="trailing" secondItem="jrm-ua-11u" secondAttribute="trailing" constant="5" id="ccy-xa-UVf"/>
+                    <constraint firstItem="2JN-hH-NaH" firstAttribute="leading" secondItem="Ycs-K7-2mH" secondAttribute="leading" constant="160" id="e7B-iq-Sdn"/>
+                    <constraint firstAttribute="trailing" secondItem="Ejj-9K-6Yw" secondAttribute="trailing" constant="165" id="fxi-WD-Nd8"/>
+                    <constraint firstItem="SJ5-nh-KZD" firstAttribute="leading" secondItem="Ycs-K7-2mH" secondAttribute="leading" constant="160" id="lCs-BT-wVo"/>
+                    <constraint firstItem="Ejj-9K-6Yw" firstAttribute="top" secondItem="Ycs-K7-2mH" secondAttribute="top" constant="11" id="lbT-9w-Z8R"/>
+                    <constraint firstAttribute="bottom" secondItem="Xvg-HA-lDh" secondAttribute="bottom" id="oqA-Gp-ijq"/>
+                    <constraint firstAttribute="trailing" secondItem="SJ5-nh-KZD" secondAttribute="trailing" constant="5" id="rLa-1j-YLg"/>
+                    <constraint firstAttribute="trailing" secondItem="Xvg-HA-lDh" secondAttribute="trailing" id="u08-tQ-P75"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnAddProvider" destination="2JN-hH-NaH" id="Uak-kF-7gS"/>
+                <outlet property="imgSeperator" destination="Xvg-HA-lDh" id="5bL-gP-wiX"/>
+                <outlet property="lblTitle" destination="Ejj-9K-6Yw" id="W7Q-zj-xAd"/>
+                <outlet property="lblValue" destination="SJ5-nh-KZD" id="2rn-YZ-cGD"/>
+                <outlet property="txtField" destination="jrm-ua-11u" id="yda-E9-Yr1"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="210"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="box_dropdown.png" width="215" height="29"/>
+        <image name="btn_add_diagnosis.png" width="238" height="30"/>
+        <image name="seperator_profilepage.png" width="315" height="1"/>
+    </resources>
+</document>

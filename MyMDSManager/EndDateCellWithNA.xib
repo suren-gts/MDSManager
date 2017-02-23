@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NexaRegular.otf">
+            <string>NexaRegular</string>
+            <string>NexaRegular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EndDateCellWithNA" rowHeight="66" id="xvE-Lg-pPl" customClass="EndDateCellWithNA">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xvE-Lg-pPl" id="8Zn-45-emA">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ap-65-dQ2">
+                        <rect key="frame" x="160" y="11" width="155" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Gyx-hy-mlj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NexaRegular" family="Nexa Regular" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="box_dropdown.png" translatesAutoresizingMaskIntoConstraints="NO" id="qIC-Pg-Vyh">
+                        <rect key="frame" x="160" y="7" width="155" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="mt8-Yo-KHK"/>
+                        </constraints>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mtf-ST-4rL">
+                        <rect key="frame" x="5" y="11" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="KNa-98-3ys"/>
+                            <constraint firstAttribute="height" constant="21" id="Mvm-L6-F3G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NexaRegular" family="Nexa Regular" pointSize="14"/>
+                        <color key="textColor" red="0.20784313730000001" green="0.50980392159999999" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seperator_profilepage.png" translatesAutoresizingMaskIntoConstraints="NO" id="dwq-dw-MgE">
+                        <rect key="frame" x="0.0" y="72" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="dRY-sT-uIB"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8q-1j-WqD">
+                        <rect key="frame" x="160" y="40" width="28" height="28"/>
+                        <state key="normal" image="check_box.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In Progress" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLM-cC-QYM">
+                        <rect key="frame" x="194" y="43" width="91" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="0Ap-65-dQ2" firstAttribute="leading" secondItem="8Zn-45-emA" secondAttribute="leading" constant="160" id="1xS-ma-TNx"/>
+                    <constraint firstAttribute="bottom" secondItem="dwq-dw-MgE" secondAttribute="bottom" id="5rl-eW-SdE"/>
+                    <constraint firstItem="dwq-dw-MgE" firstAttribute="leading" secondItem="8Zn-45-emA" secondAttribute="leading" id="Cz3-2A-qbL"/>
+                    <constraint firstItem="Mtf-ST-4rL" firstAttribute="top" secondItem="8Zn-45-emA" secondAttribute="top" constant="11" id="FFs-hp-X56"/>
+                    <constraint firstItem="0Ap-65-dQ2" firstAttribute="top" secondItem="8Zn-45-emA" secondAttribute="top" constant="11" id="FmH-uf-v46"/>
+                    <constraint firstAttribute="trailing" secondItem="qIC-Pg-Vyh" secondAttribute="trailing" constant="5" id="HgY-I7-hEf"/>
+                    <constraint firstAttribute="trailing" secondItem="0Ap-65-dQ2" secondAttribute="trailing" constant="5" id="isv-Zj-QOM"/>
+                    <constraint firstItem="qIC-Pg-Vyh" firstAttribute="leading" secondItem="8Zn-45-emA" secondAttribute="leading" constant="160" id="lX5-Sy-VcY"/>
+                    <constraint firstAttribute="trailing" secondItem="dwq-dw-MgE" secondAttribute="trailing" id="mbW-8o-9He"/>
+                    <constraint firstItem="qIC-Pg-Vyh" firstAttribute="top" secondItem="8Zn-45-emA" secondAttribute="top" constant="7" id="sy2-rc-jW6"/>
+                    <constraint firstAttribute="trailing" secondItem="Mtf-ST-4rL" secondAttribute="trailing" constant="165" id="wxA-x8-QkR"/>
+                    <constraint firstItem="Mtf-ST-4rL" firstAttribute="leading" secondItem="8Zn-45-emA" secondAttribute="leading" constant="5" id="x2s-8l-T2t"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnNA" destination="K8q-1j-WqD" id="eCa-18-yDa"/>
+                <outlet property="imgSeperator" destination="dwq-dw-MgE" id="5vO-4i-Sub"/>
+                <outlet property="lblNA" destination="KLM-cC-QYM" id="l4i-i4-J69"/>
+                <outlet property="lblTitle" destination="Mtf-ST-4rL" id="Iyb-aF-VzB"/>
+                <outlet property="lblValue" destination="0Ap-65-dQ2" id="CCM-oA-bdo"/>
+                <outlet property="txtField" destination="qIC-Pg-Vyh" id="God-cc-ieA"/>
+            </connections>
+            <point key="canvasLocation" x="320" y="306"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="box_dropdown.png" width="215" height="29"/>
+        <image name="check_box.png" width="28" height="28"/>
+        <image name="seperator_profilepage.png" width="315" height="1"/>
+    </resources>
+</document>

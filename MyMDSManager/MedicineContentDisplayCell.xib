@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NexaRegular.otf">
+            <string>NexaRegular</string>
+            <string>NexaRegular</string>
+            <string>NexaRegular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MedicineContentDisplayCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_arrow_medicalhistory.png" translatesAutoresizingMaskIntoConstraints="NO" id="9im-OU-Z4L">
+                        <rect key="frame" x="306" y="15" width="7" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="7" id="Pwn-ZS-zH3"/>
+                            <constraint firstAttribute="height" constant="13" id="Yo4-I9-TSO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqb-FG-rVN">
+                        <rect key="frame" x="129" y="11" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="4X4-DF-ZbS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NexaRegular" family="Nexa Regular" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltk-sB-FYI">
+                        <rect key="frame" x="238" y="11" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="ADV-Pk-JV1"/>
+                            <constraint firstAttribute="height" constant="21" id="DDE-1D-fcS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NexaRegular" family="Nexa Regular" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Br6-bM-JRC">
+                        <rect key="frame" x="8" y="11" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="FSX-jn-53W"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NexaRegular" family="Nexa Regular" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seperator_profilepage.png" translatesAutoresizingMaskIntoConstraints="NO" id="Keh-ZU-kq3">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="qdy-Og-Yac"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Br6-bM-JRC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0u9-os-9mD"/>
+                    <constraint firstAttribute="centerY" secondItem="Zqb-FG-rVN" secondAttribute="centerY" id="5c8-w1-1kT"/>
+                    <constraint firstAttribute="trailing" secondItem="9im-OU-Z4L" secondAttribute="trailing" constant="7" id="9or-dm-rAZ"/>
+                    <constraint firstAttribute="trailing" secondItem="ltk-sB-FYI" secondAttribute="trailing" constant="22" id="B93-nl-fMz"/>
+                    <constraint firstItem="ltk-sB-FYI" firstAttribute="leading" secondItem="Zqb-FG-rVN" secondAttribute="trailing" constant="9" id="IDX-3v-Fiz"/>
+                    <constraint firstAttribute="centerY" secondItem="ltk-sB-FYI" secondAttribute="centerY" id="Kuz-KZ-3z5"/>
+                    <constraint firstAttribute="bottom" secondItem="Keh-ZU-kq3" secondAttribute="bottom" id="LbB-P1-YkB"/>
+                    <constraint firstAttribute="centerY" secondItem="9im-OU-Z4L" secondAttribute="centerY" id="Sft-sG-61j"/>
+                    <constraint firstItem="Keh-ZU-kq3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TDB-mM-ofG"/>
+                    <constraint firstAttribute="centerX" secondItem="Zqb-FG-rVN" secondAttribute="centerX" constant="-19" id="d8f-P0-lhw"/>
+                    <constraint firstItem="Zqb-FG-rVN" firstAttribute="leading" secondItem="Br6-bM-JRC" secondAttribute="trailing" constant="1" id="sNC-rF-jTl"/>
+                    <constraint firstAttribute="centerY" secondItem="Br6-bM-JRC" secondAttribute="centerY" id="sY9-am-xSG"/>
+                    <constraint firstAttribute="trailing" secondItem="Keh-ZU-kq3" secondAttribute="trailing" id="zrt-d0-xlY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="lblDosage" destination="ltk-sB-FYI" id="sPm-RG-UHR"/>
+                <outlet property="lblDrugName" destination="Br6-bM-JRC" id="rC5-DX-TSM"/>
+                <outlet property="lblGName" destination="Zqb-FG-rVN" id="glJ-7l-16N"/>
+            </connections>
+            <point key="canvasLocation" x="299" y="291"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_arrow_medicalhistory.png" width="7" height="13"/>
+        <image name="seperator_profilepage.png" width="315" height="1"/>
+    </resources>
+</document>

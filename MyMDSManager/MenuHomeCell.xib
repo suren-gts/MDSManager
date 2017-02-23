@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NexaRegular.otf">
+            <string>NexaRegular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MenuHomeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTp-42-bi4">
+                        <rect key="frame" x="78" y="17" width="200" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="Nfw-7V-m05"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NexaRegular" family="Nexa Regular" pointSize="19"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eoe-Bp-kaV">
+                        <rect key="frame" x="22" y="11" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="1hK-WC-dJ2"/>
+                            <constraint firstAttribute="height" constant="44" id="bzi-PU-CWa"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seperator_profilepage.png" translatesAutoresizingMaskIntoConstraints="NO" id="jbQ-Tg-NfA">
+                        <rect key="frame" x="78" y="49" width="203" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="YrR-KU-AMF"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ntJ-hQ-wBd">
+                        <rect key="frame" x="287" y="24" width="6" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Bh2-1G-jLt"/>
+                            <constraint firstAttribute="width" constant="6" id="qZb-Ve-xHn"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ntJ-hQ-wBd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="24O-fa-YxK"/>
+                    <constraint firstItem="jbQ-Tg-NfA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="49" id="3vd-HQ-gNo"/>
+                    <constraint firstItem="jbQ-Tg-NfA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="78" id="7qb-0r-eCb"/>
+                    <constraint firstItem="eoe-Bp-kaV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="8DA-82-nUS"/>
+                    <constraint firstItem="pTp-42-bi4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="AvY-Dy-Tyu"/>
+                    <constraint firstAttribute="trailing" secondItem="ntJ-hQ-wBd" secondAttribute="trailing" constant="27" id="KfY-cR-0XJ"/>
+                    <constraint firstAttribute="trailing" secondItem="pTp-42-bi4" secondAttribute="trailing" constant="42" id="Vot-Kl-eFE"/>
+                    <constraint firstAttribute="trailing" secondItem="jbQ-Tg-NfA" secondAttribute="trailing" constant="39" id="geD-1d-mnF"/>
+                    <constraint firstItem="eoe-Bp-kaV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="mME-mN-X5o"/>
+                    <constraint firstItem="pTp-42-bi4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="78" id="pn7-z6-PB5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgIcon" destination="eoe-Bp-kaV" id="xMS-O6-tgU"/>
+                <outlet property="lblTitle" destination="pTp-42-bi4" id="4z2-lv-mA8"/>
+            </connections>
+            <point key="canvasLocation" x="294" y="277"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.png" width="6" height="10"/>
+        <image name="seperator_profilepage.png" width="315" height="1"/>
+    </resources>
+</document>
